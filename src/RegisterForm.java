@@ -39,7 +39,7 @@ public class RegisterForm extends javax.swing.JFrame {
         jTextRef.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
         jTextRef.setLineWrap(true);
         jTextRef.setRows(5);
-        jTextRef.setText("the quick brown fox jumps over the lazy dog");
+        jTextRef.setText("t`he quick brown fox jumps over the lazy dog");
         jTextRef.setWrapStyleWord(true);
         jTextRef.setBorder(null);
         jTextRef.setEnabled(false);
