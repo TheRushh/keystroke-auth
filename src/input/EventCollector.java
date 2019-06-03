@@ -111,7 +111,7 @@ public class EventCollector {
             }
 
             if (overlap) {
-                // assume that the othe overlapping key is still pressed
+                // assume that the other overlapping key is still pressed
                 long delay = pressedKeys.get(lastKey) - time; // minus value
                 if (digraphCounts.containsKey(lastKeyBackup)) {
                     if (digraphCounts.get(lastKeyBackup).contains(lastKey)) {
@@ -140,17 +140,17 @@ public class EventCollector {
         }
     }
 
-//    public void log() {
-//        totalKeyCounts.forEach((t, u) -> {
-//            System.out.println("Code: " + t + "; Avg: " + totalKeyDurations.get(t) / u);
-//        });
-//
-//        digraphCounts.forEach((k, h) -> {
-//            h.forEach((t, u) -> {
-//                System.out.println(k + "->" + t + " = " + digraphDelays.get(k).get(t) / u);
-//            });
-//        });
-//    }
+    public void log() {
+        totalKeyCounts.forEach((t, u) -> {
+            System.out.println("Code: " + t + "; Avg: " + totalKeyDurations.get(t) / u);
+        });
+
+        digraphCounts.forEach((k, h) -> {
+            h.forEach((t, u) -> {
+                System.out.println(k + "->" + t + " = " + digraphDelays.get(k).get(t) / u);
+            });
+        });
+    }
     /**
      * @return the totalKeyDurations
      */

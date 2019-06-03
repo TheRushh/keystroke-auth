@@ -8,9 +8,9 @@ public class FeatureMatcher {
     public static final int DIGRAPH_DELAY_TOLERANCE = 30;
 
     public static final double KEY_DURATION_IMPACT = 1.5;
-    public static final double DIGRAPH_DELAY_IMPACT = 1 / 2.5;
+    public static final double DIGRAPH_DELAY_IMPACT = 0.5;
 
-    public static final double MATCH_TOLERANCE = 0.95;
+    public static final double MATCH_TOLERANCE = 1;
 
     public static boolean match(FeatureModel actual, FeatureModel reference) {
         int durationMatches = 0;

@@ -129,6 +129,7 @@ public class RegisterForm extends javax.swing.JFrame {
     private void jButtonNextActionPerformed(java.awt.event.ActionEvent evt) {
         if (jTextRef.getText().equals(jTextAct.getText())) {
             FeatureModel model = FeatureExtractor.extractFeatures(collector);
+            collector.log();
             FileIO.saveModel(model);
 
             new LoginForm().setVisible(true);
